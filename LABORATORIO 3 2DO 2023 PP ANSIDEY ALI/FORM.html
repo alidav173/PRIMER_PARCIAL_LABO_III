@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="formulario.css">
+    <title>Parcial Uno</title>
+</head>
+<body id = "cuerpo">
+
+        <h2>Form ABM</h2>
+        <form id="form">
+            <ul>
+                <li>
+                  <label for="id">Id:</label>
+                  <input type="text" id="id" name="id" disabled/>
+                </li>
+                <li>
+                  <label for="modelo">Modelo:</label>
+                  <input type="text" id="Modelo" name="modelo" />
+                </li>
+                <li>
+                    <label for="anoFab">Año Fabricacion:</label>
+                    <input type="text" id="AnoFab" name="anoFab" />
+                  </li>
+                  <li>
+                    <label for="velMax">Velocidad Maxima:</label>
+                    <input type="text" id="VelMax" name="velMax" />
+                  </li>
+                  <li>
+                    <select  id="select" name="select">
+                        <option>Aereo</option>
+                        <option>Terrestre</option>
+                    </select>
+                  </li>
+
+                  <li>
+                    <label id="etiqueta4" for="altMax">Altura Maxima:</label>
+                    <input type="text" id="AltMax" name="altMax"/>
+                  </li>
+                  <li>
+                    <label id="etiqueta5" for="autonomia">Autonomia:</label>
+                    <input type="text" id="Autonomia" name="autonomia" />
+                  </li>
+                  <li>
+                    <label id="etiqueta6" for="cantPue">Cantidad Puertas:</label>
+                    <input type="text" id="CantPue" name="cantPue"/>
+                  </li>
+                  <li>
+                    <label id="etiqueta7" for="cantRue">Cantidad Ruedas:</label>
+                    <input type="text" id="CantRue" name="cantRue" />
+                  </li>
+              </ul>
+              <button id="botonAgregar" onclick="agregarVehiculo()">Agregar</button>
+              <button id="botonModificar">Modificar</button>
+              <button id="botonEliminar">Eliminar</button>
+              <button id="botonCancelar" onclick="cancelar()">Cancelar</button>
+        </form>
+
+
+    <script src="FORM.js"></script>
+</body>
+
+
+</html>

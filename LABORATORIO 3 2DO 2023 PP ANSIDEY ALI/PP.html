@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="PP.css">
+    <title>Parcial Uno</title>
+</head>
+<body id = "cuerpo">
+
+        <p>Form de datos</p>
+        <div id="div1">
+            <label id="etiqueta1" for="promedio">Calcular Promedio Velocidad Maxima</label>
+            <textarea type="text" id="promedio" placeholder="0" disabled="true"></textarea>
+      <button id="botonPromedio" onclick ="CalcularVelocidadPromedio()">Calcular</button>
+        </div>
+        <div id="div2">
+
+            <input type="checkbox" name="Id" id="cboxId" value="id" checked>
+            <label for="Id">Id</label>
+            <input type="checkbox" name="Modelo"  id="cboxModelo" value="modelo" checked>
+            <label for="Modelo">Modelo</label>
+            <input type="checkbox" name="AnoFab"  id="cboxAnoFab" value="anoFab" checked>
+            <label for="AnoFab">Año fab</label>
+            <input type="checkbox" name="VelMax"  id="cboxVelMax" value="velMax" checked>
+            <label for="VelMax">Vel Max</label>
+            <input type="checkbox" name="AltMax"  id="cboxAltMax" value="altMax" checked>
+            <label for="AltMax">Alt Max</label>
+            <input type="checkbox" name="Autonomia"  id="cboxAutonomia" value="autonomia" checked>
+            <label for="Autonomia">Autonomia</label>
+            <input type="checkbox" name="CantPue"  id="cboxCantPue" value="cantPue" checked>
+            <label for="CantPue">Cant Pue</label>
+            <input type="checkbox" name="CantRue"  id="cboxCantRue" value="cantRue" checked>
+            <label for="CantRue">Cant Rue</label>
+
+        </div>
+        <table id="tabla">
+            <select id="select">
+                <option>Aereo</option>
+                <option>Terrestre</option>
+                <option>Todos</option>
+            </select>
+
+        </table>
+        <div>
+            <button id="botonAgregar" onclick="AgregarVehiculo()">Agregar</button>
+        </div>
+
+
+    <script src="pp.js"></script>
+</body>
+
+
+</html>
+

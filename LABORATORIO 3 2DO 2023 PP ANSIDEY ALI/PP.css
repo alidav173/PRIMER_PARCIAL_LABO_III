@@ -1,0 +1,13 @@
+table {
+  border: black 1px solid;
+  border-collapse: collapse;
+  width: 40%;
+}
+td, th {
+  border: black 1px solid;
+}
+
+#promedio{
+  text-align:justify;
+  position: relative;
+}
